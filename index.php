@@ -18,20 +18,31 @@ require __DIR__ . '/functions.php';
 
 <body>
 
-    <?php foreach ($articles as $article) : ?>
-        <?php $title = $article['title'];
+    <?php foreach ($articles as $article) :
+        $title = $article['title'];
         $content = $article['content'];
         $published_date = $article['published_date'];
         $img = $article['img'];
-        $likes = $article['likes']; ?>
+        $likes = $article['likes'];
+
+        $firstName = $authors[$article['authorId']]['firstName'];
+        $lastName = $authors[$article['authorId']]['lastName'];
+        $name = "$firstName $lastName";
+    ?>
 
         <article>
-            <h3><?= $title; ?></h3>
-            <img src="<?= $img; ?>">
-            <p><?= $content; ?></p>
-            <p><?= $published_date; ?></p>
-            <p><?= $likes; ?></p>
+
+            <div class="article">
+                <h3 class="title"><?= $title; ?></h3>
+                <img src="<?= $img; ?>">
+                <p class="content"><?= $content; ?></p>
+                <p>Published: <?= $published_date; ?></p>
+                <p>Written by <?= $name; ?></p>
+                <p><?= $likes; ?></p>
+            </div>
+
         </article>
+
     <?php endforeach; ?>
 </body>
 
