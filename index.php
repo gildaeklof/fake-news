@@ -1,41 +1,44 @@
 <?php
-require __DIR__ . '/data.php';
 
-require __DIR__ . '/functions.php';
-// This is the file where you can keep your HTML markup. We should always try to
-// keep us much logic out of the HTML as possible. Put the PHP logic in the top
-// of the files containing HTML or even better; in another PHP file altogether.
+require __DIR__ . '/head.php'
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="fn.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Fake News</title>
-</head>
+<article>
 
-<body>
-    <section class="container">
+    <?php foreach ($articles as $article) : ?>
+        <?php
+        $title = $article['title'];
+        $img = $article['img'];
+        $content = $article['content'];
+        $date = $article['published_date'];
+        $likes = $article['likes'];
 
-        <?php foreach ($articles as $article) : ?>
-            <article>
-                <div class="container">
-                    <h3><?= $article['title']; ?></h3>
-                    <img src="<?= $article['img']; ?>">
-                    <p class="content"><?= $article['content']; ?></p>
-                    <p><?= $article['published_date']; ?></p>
-                    <p><?= 'Posted by: ' . getAuthorById($article['id'], $authors); ?></p>
-                    <p><?= $article['likes']; ?></p>
+        ?>
+
+        <div class="container">
+            <div class="content">
+                <div class="text-center">
+                    <h2><?= $title ?></h2>
+                    <img src="<?= $img; ?>" class="img-fluid" alt="Responsive image">
+                    <p><?= $content ?></p>
+                    <div class="info">
+                        <p><?= 'Posted by: ' . getAuthorById($article['id'], $authors); ?></p>
+                        <p><?= $date ?></p>
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                        Like <span class="badge badge-light"><?= $article['likes']; ?></span>
+                    </button>
                 </div>
-            </article>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</article>
 
-        <?php endforeach; ?>
+<?php
+require __DIR__ . '/footer.php'
+?>
 
-    </section>
 
 </body>
 
