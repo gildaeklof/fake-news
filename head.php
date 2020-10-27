@@ -23,9 +23,10 @@ require __DIR__ . '/functions.php';
     <header>
         <div class="header">
             <h1>Fake News Network</h1>
-            <p>Your untrusty news source</p>
+            <h3>Your untrusty news source</h3>
         </div>
     </header>
     <nav class="navbar sticky-top navbar-light bg-light">
         <a class="navbar-brand" href="#">Most Read Articles This Week:</a>
+        <a class="navbar-brand" href="#">Home</a>
     </nav>

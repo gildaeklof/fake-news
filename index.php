@@ -6,7 +6,7 @@ require __DIR__ . '/head.php'
 
 <article>
 
-    <?php foreach ($articles as $article) : ?>
+    <?php foreach (sortByDate($articles) as $article) : ?>
         <?php
         $title = $article['title'];
         $img = $article['img'];
@@ -21,14 +21,14 @@ require __DIR__ . '/head.php'
                 <div class="text-center">
                     <h2><?= $title ?></h2>
                     <img src="<?= $img; ?>" class="img-fluid" alt="Responsive image">
-                    <p><?= $content ?></p>
+                    <?= $content ?>
                     <div class="info">
-                        <p><?= 'Posted by: ' . getAuthorById($article['id'], $authors); ?></p>
-                        <p><?= $date ?></p>
+                        <h5><?= 'Posted by: ' . getAuthorById($article['id'], $authors); ?></h5>
+                        <h6><?= $date ?></h6>
+                        <button type="button" class="btn btn-primary">
+                            Like <span class="badge badge-light"><?= $article['likes']; ?></span>
+                        </button>
                     </div>
-                    <button type="button" class="btn btn-primary">
-                        Like <span class="badge badge-light"><?= $article['likes']; ?></span>
-                    </button>
                 </div>
             </div>
         </div>
