@@ -7,6 +7,7 @@ This project was built with:
 * PHP
 * HTML
 * CSS
+* Bootstrap
 
 ## Instructions
 1. Open your command line.
