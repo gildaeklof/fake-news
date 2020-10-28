@@ -13,6 +13,7 @@ require __DIR__ . '/head.php'
         $content = $article['content'];
         $date = $article['published_date'];
         $likes = $article['likes'];
+        $alt = $article['alt'];
 
         ?>
 
@@ -20,7 +21,7 @@ require __DIR__ . '/head.php'
             <div class="content">
                 <div class="text-center">
                     <h2><?= $title ?></h2>
-                    <img src="<?= $img; ?>" class="img-fluid" alt="Responsive image">
+                    <img src="<?= $img; ?>" class="img-fluid" alt="<?= $alt; ?>">
                     <?= $content ?>
                     <div class="info">
                         <h5><?= 'Posted by: ' . getAuthorById($article['id'], $authors); ?></h5>

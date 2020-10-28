@@ -20,6 +20,7 @@ $articles = [
         'id' => 1,
         'likes' => '62',
         'img' => 'img/wine.jpeg',
+        'alt' => 'People cheering with wine glasses',
         'category' => 'drinks'
     ],
 
@@ -30,6 +31,7 @@ $articles = [
         'id' => 1,
         'likes' => '198',
         'img' => 'img/cat.jpeg',
+        'alt' => 'Cat meowing',
         'category' => 'lifestyle'
     ],
 
@@ -40,6 +42,7 @@ $articles = [
         'id' => 2,
         'likes' => '23',
         'img' => 'img/ramen.jpeg',
+        'alt' => 'Bowl of ramen with a person holding chopsticks',
         'category' => 'food'
     ],
 
@@ -50,6 +53,7 @@ $articles = [
         'id' => 2,
         'likes' => '73',
         'img' => 'img/cheese.jpeg',
+        'alt' => 'Assortment of cheeses',
         'category' => 'food'
     ],
 
@@ -60,6 +64,7 @@ $articles = [
         'id' => 3,
         'likes' => '12',
         'img' => 'img/coffee.jpeg',
+        'alt' => 'Coffee grinds and a cappuccino',
         'category' => 'drinks'
     ],
 
@@ -70,6 +75,7 @@ $articles = [
         'id' => 3,
         'likes' => '6',
         'img' => 'img/bob.jpeg',
+        'alt' => 'Body of water surrounded by mountains',
         'category' => 'lifestyle'
     ],
 
@@ -80,6 +86,7 @@ $articles = [
         'id' => 4,
         'likes' => '81',
         'img' => 'img/obama.jpeg',
+        'alt' => 'Portrait of Barack Obama',
         'category' => 'lifestyle'
     ],
 
@@ -90,6 +97,7 @@ $articles = [
         'id' => 4,
         'likes' => '36',
         'img' => 'img/cupcake.jpeg',
+        'alt' => 'Cupcake with frosting and sprinkles',
         'category' => 'food'
     ],
 
@@ -100,6 +108,7 @@ $articles = [
         'id' => 5,
         'likes' => '31',
         'img' => 'img/pizza.jpeg',
+        'alt' => 'Pizza with a variety of toppings',
         'category' => 'food'
     ],
 
@@ -110,6 +119,7 @@ $articles = [
         'id' => 5,
         'likes' => '11',
         'img' => 'img/liquor.jpeg',
+        'alt' => 'Glass of whisky and a Johnnie Walker whisky bottle',
         'category' => 'drinks'
     ],
 
