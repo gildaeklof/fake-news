@@ -1,4 +1,3 @@
-https://giphy.com/gifs/gYu8XZ8IJrYti/html5
 # Fake News
 In this assignment I've built a newsfeed consisting of fake news articles.
 The webpage consists of 10 articles written by 5 authors.
