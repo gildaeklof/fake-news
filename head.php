@@ -2,11 +2,9 @@
 require __DIR__ . '/data.php';
 
 require __DIR__ . '/functions.php';
-// This is the file where you can keep your HTML markup. We should always try to
-// keep us much logic out of the HTML as possible. Put the PHP logic in the top
-// of the files containing HTML or even better; in another PHP file altogether.
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,13 +18,18 @@ require __DIR__ . '/functions.php';
 </head>
 
 <body>
+
     <header>
         <div class="header">
-            <h1>Fake News Network</h1>
+            <h1>FAKE NEWS NETWORK</h1>
             <h3>Your untrusty news source</h3>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-light bg-light">
+
+    <nav class="navbar sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Most Read Articles This Week:</a>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="/index.php">All</a>
+        <a class="navbar-brand" href="/food.php">Food</a>
+        <a class="navbar-brand" href="/drinks.php">Drinks</a>
+        <a class="navbar-brand" href="/lifestyle.php">Lifestyle</a>
     </nav>

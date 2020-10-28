@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/data.php';
 
+
 function getAuthorById(int $articles_id, array $authors): string
 {
 
@@ -15,6 +16,7 @@ function getAuthorById(int $articles_id, array $authors): string
         }
     }
 }
+
 
 function sortByDate(array $articles): array
 {
