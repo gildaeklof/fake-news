@@ -1,4 +1,3 @@
-![gif](https://media.giphy.com/media/gYu8XZ8IJrYti/giphy.gif)
 # Fake News
 In this assignment I've built a newsfeed consisting of fake news articles.
 The webpage consists of 10 articles written by 5 authors.
@@ -25,3 +24,4 @@ This project was built with:
 ## Code Review
 ## License
 This project was created under the MIT License. Read the `LICENCE` file for more details.
+
