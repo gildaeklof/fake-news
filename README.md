@@ -20,6 +20,9 @@ This project was built with:
 5. Visit the `localhost:8000/index.php` page in your browser.
 
 ## Testers
+
+1. Réka Madarász
+2. 
 ## Code Review
 ## License
 This project was created under the MIT License. Read the `LICENCE` file for more details.
