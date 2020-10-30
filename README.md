@@ -22,7 +22,7 @@ This project was built with:
 ## Testers
 
 1. Réka Madarász
-2. 
+2. Mark Mados
 ## Code Review
 ## License
 This project was created under the MIT License. Read the `LICENCE` file for more details.
