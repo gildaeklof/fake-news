@@ -15,7 +15,7 @@ This project was built with:
 
 3. Navigate into the repository: `cd fake-news` 
 
-4. Open up a local browser: `php -S localhost:8000`
+4. Open up a local server: `php -S localhost:8000`
 
 5. Visit the `localhost:8000/index.php` page in your browser.
 
